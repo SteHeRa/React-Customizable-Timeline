@@ -25,3 +25,11 @@ describe('App', () => {
     expect(screen.queryByText('2017')).not.toBeInTheDocument();
   });
 });
+
+describe('ColorMatch', () => {
+  it('should render the color in the color picker ', () => {
+
+  });
+}
+ 
+)
