@@ -4,7 +4,7 @@ import App from './App';
 import './__mocks__/intersectionObserverMock';
 
 describe('App', () => {
-  it('has 2020 tile', () => {
+  it('has correct text in tiles', () => {
     render(<App />);
 
     expect(screen.queryByText('2020')).toBeInTheDocument();
