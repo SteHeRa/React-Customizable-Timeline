@@ -1,5 +1,5 @@
 import React from 'react';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import ColorPicker from '../ColorPicker/ColorPicker';
 
@@ -15,7 +15,7 @@ describe('ColorPicker', () => {
 
     const primaryColor = screen.getAllByRole('textbox')[0];
     const secondaryColor = screen.getAllByRole('textbox')[1];
-    const backgroundColor = screen.getAllByRole('textbox')[2];
+    // const backgroundColor = screen.getAllByRole('textbox')[2];
 
     userEvent.type(primaryColor, 'test');
     userEvent.type(secondaryColor, 'test');
