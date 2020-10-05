@@ -29,6 +29,13 @@ describe('App', () => {
     expect(screen.queryByText('16/09/2020 Label')).not.toBeInTheDocument();
     expect(screen.queryByText('16/09/2020 Content')).not.toBeInTheDocument(); //Check that the rendered component does not cotain this text
   });
+
+  it('renders the correct amount of items', () => {
+    render(<App />);
+
+    const timelineItems = screen.getAllByTestId('timelineItem');
+    expect(timelineItems.length).toEqual(data.length);
+  });
 });
 
 describe('ColorMatch', () => {
