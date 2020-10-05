@@ -16,7 +16,7 @@ Object {
           >
             <div
               class="sc-dlnjPT eFJCwd"
-              data-testid="timelineItem"
+              data-testid="timelineSection"
             >
               <div
                 style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -39,6 +39,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -78,6 +79,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -117,6 +119,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -149,7 +152,7 @@ Object {
             </div>
             <div
               class="sc-dlnjPT eFJCwd"
-              data-testid="timelineItem"
+              data-testid="timelineSection"
             >
               <div
                 style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -172,6 +175,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -206,6 +210,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -233,7 +238,7 @@ Object {
             </div>
             <div
               class="sc-dlnjPT eFJCwd"
-              data-testid="timelineItem"
+              data-testid="timelineSection"
             >
               <div
                 style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -256,6 +261,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -290,6 +296,7 @@ Object {
                     style="transform: scale3d(1.25, 0.75, 1);"
                   >
                     <div
+                      data-testid="timelineItem"
                       style="cursor: pointer;"
                     >
                       <h4>
@@ -332,7 +339,7 @@ Object {
         >
           <div
             class="sc-dlnjPT eFJCwd"
-            data-testid="timelineItem"
+            data-testid="timelineSection"
           >
             <div
               style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -355,6 +362,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -394,6 +402,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -433,6 +442,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -465,7 +475,7 @@ Object {
           </div>
           <div
             class="sc-dlnjPT eFJCwd"
-            data-testid="timelineItem"
+            data-testid="timelineSection"
           >
             <div
               style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -488,6 +498,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -522,6 +533,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -549,7 +561,7 @@ Object {
           </div>
           <div
             class="sc-dlnjPT eFJCwd"
-            data-testid="timelineItem"
+            data-testid="timelineSection"
           >
             <div
               style="transform: translate3d(0, -4px, 0) scaleY(1.02);"
@@ -572,6 +584,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
@@ -606,6 +619,7 @@ Object {
                   style="transform: scale3d(1.25, 0.75, 1);"
                 >
                   <div
+                    data-testid="timelineItem"
                     style="cursor: pointer;"
                   >
                     <h4>
