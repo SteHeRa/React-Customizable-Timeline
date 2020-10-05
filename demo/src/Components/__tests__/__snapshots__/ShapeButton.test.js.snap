@@ -1,0 +1,669 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShapeButton component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div>
+        <h4>
+           
+          Title Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="titleShapecircle"
+              id="titleShapecircle"
+              name="titleShape"
+              type="radio"
+              value="circle"
+            />
+            <label
+              for="titleShapecircle"
+            >
+              CIRCLE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShapesquare"
+              id="titleShapesquare"
+              name="titleShape"
+              type="radio"
+              value="square"
+            />
+            <label
+              for="titleShapesquare"
+            >
+              SQUARE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShaperectangular"
+              id="titleShaperectangular"
+              name="titleShape"
+              type="radio"
+              value="rectangular"
+            />
+            <label
+              for="titleShaperectangular"
+            >
+              RECTANGULAR
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShapediamond"
+              id="titleShapediamond"
+              name="titleShape"
+              type="radio"
+              value="diamond"
+            />
+            <label
+              for="titleShapediamond"
+            >
+              DIAMOND
+            </label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>
+           
+          Dot Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="dotShapecircle"
+              id="dotShapecircle"
+              name="dotShape"
+              type="radio"
+              value="circle"
+            />
+            <label
+              for="dotShapecircle"
+            >
+              CIRCLE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapesquare"
+              id="dotShapesquare"
+              name="dotShape"
+              type="radio"
+              value="square"
+            />
+            <label
+              for="dotShapesquare"
+            >
+              SQUARE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapeline"
+              id="dotShapeline"
+              name="dotShape"
+              type="radio"
+              value="line"
+            />
+            <label
+              for="dotShapeline"
+            >
+              LINE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapediamond"
+              id="dotShapediamond"
+              name="dotShape"
+              type="radio"
+              value="diamond"
+            />
+            <label
+              for="dotShapediamond"
+            >
+              DIAMOND
+            </label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>
+           
+          Line Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="lineShapesolid"
+              id="lineShapesolid"
+              name="lineShape"
+              type="radio"
+              value="solid"
+            />
+            <label
+              for="lineShapesolid"
+            >
+              SOLID
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapedotted"
+              id="lineShapedotted"
+              name="lineShape"
+              type="radio"
+              value="dotted"
+            />
+            <label
+              for="lineShapedotted"
+            >
+              DOTTED
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapedashed"
+              id="lineShapedashed"
+              name="lineShape"
+              type="radio"
+              value="dashed"
+            />
+            <label
+              for="lineShapedashed"
+            >
+              DASHED
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapehidden"
+              id="lineShapehidden"
+              name="lineShape"
+              type="radio"
+              value="hidden"
+            />
+            <label
+              for="lineShapehidden"
+            >
+              HIDDEN
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <h4>
+           
+          Title Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="titleShapecircle"
+              id="titleShapecircle"
+              name="titleShape"
+              type="radio"
+              value="circle"
+            />
+            <label
+              for="titleShapecircle"
+            >
+              CIRCLE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShapesquare"
+              id="titleShapesquare"
+              name="titleShape"
+              type="radio"
+              value="square"
+            />
+            <label
+              for="titleShapesquare"
+            >
+              SQUARE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShaperectangular"
+              id="titleShaperectangular"
+              name="titleShape"
+              type="radio"
+              value="rectangular"
+            />
+            <label
+              for="titleShaperectangular"
+            >
+              RECTANGULAR
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="titleShapediamond"
+              id="titleShapediamond"
+              name="titleShape"
+              type="radio"
+              value="diamond"
+            />
+            <label
+              for="titleShapediamond"
+            >
+              DIAMOND
+            </label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>
+           
+          Dot Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="dotShapecircle"
+              id="dotShapecircle"
+              name="dotShape"
+              type="radio"
+              value="circle"
+            />
+            <label
+              for="dotShapecircle"
+            >
+              CIRCLE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapesquare"
+              id="dotShapesquare"
+              name="dotShape"
+              type="radio"
+              value="square"
+            />
+            <label
+              for="dotShapesquare"
+            >
+              SQUARE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapeline"
+              id="dotShapeline"
+              name="dotShape"
+              type="radio"
+              value="line"
+            />
+            <label
+              for="dotShapeline"
+            >
+              LINE
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="dotShapediamond"
+              id="dotShapediamond"
+              name="dotShape"
+              type="radio"
+              value="diamond"
+            />
+            <label
+              for="dotShapediamond"
+            >
+              DIAMOND
+            </label>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4>
+           
+          Line Shape
+           
+        </h4>
+        <div
+          class="shapes_selection"
+        >
+          <div>
+            <input
+              aria-label="lineShapesolid"
+              id="lineShapesolid"
+              name="lineShape"
+              type="radio"
+              value="solid"
+            />
+            <label
+              for="lineShapesolid"
+            >
+              SOLID
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapedotted"
+              id="lineShapedotted"
+              name="lineShape"
+              type="radio"
+              value="dotted"
+            />
+            <label
+              for="lineShapedotted"
+            >
+              DOTTED
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapedashed"
+              id="lineShapedashed"
+              name="lineShape"
+              type="radio"
+              value="dashed"
+            />
+            <label
+              for="lineShapedashed"
+            >
+              DASHED
+            </label>
+          </div>
+          <div>
+            <input
+              aria-label="lineShapehidden"
+              id="lineShapehidden"
+              name="lineShape"
+              type="radio"
+              value="hidden"
+            />
+            <label
+              for="lineShapehidden"
+            >
+              HIDDEN
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div>
+      <h4>
+         
+        Title Shape
+         
+      </h4>
+      <div
+        class="shapes_selection"
+      >
+        <div>
+          <input
+            aria-label="titleShapecircle"
+            id="titleShapecircle"
+            name="titleShape"
+            type="radio"
+            value="circle"
+          />
+          <label
+            for="titleShapecircle"
+          >
+            CIRCLE
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="titleShapesquare"
+            id="titleShapesquare"
+            name="titleShape"
+            type="radio"
+            value="square"
+          />
+          <label
+            for="titleShapesquare"
+          >
+            SQUARE
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="titleShaperectangular"
+            id="titleShaperectangular"
+            name="titleShape"
+            type="radio"
+            value="rectangular"
+          />
+          <label
+            for="titleShaperectangular"
+          >
+            RECTANGULAR
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="titleShapediamond"
+            id="titleShapediamond"
+            name="titleShape"
+            type="radio"
+            value="diamond"
+          />
+          <label
+            for="titleShapediamond"
+          >
+            DIAMOND
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>
+         
+        Dot Shape
+         
+      </h4>
+      <div
+        class="shapes_selection"
+      >
+        <div>
+          <input
+            aria-label="dotShapecircle"
+            id="dotShapecircle"
+            name="dotShape"
+            type="radio"
+            value="circle"
+          />
+          <label
+            for="dotShapecircle"
+          >
+            CIRCLE
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="dotShapesquare"
+            id="dotShapesquare"
+            name="dotShape"
+            type="radio"
+            value="square"
+          />
+          <label
+            for="dotShapesquare"
+          >
+            SQUARE
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="dotShapeline"
+            id="dotShapeline"
+            name="dotShape"
+            type="radio"
+            value="line"
+          />
+          <label
+            for="dotShapeline"
+          >
+            LINE
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="dotShapediamond"
+            id="dotShapediamond"
+            name="dotShape"
+            type="radio"
+            value="diamond"
+          />
+          <label
+            for="dotShapediamond"
+          >
+            DIAMOND
+          </label>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h4>
+         
+        Line Shape
+         
+      </h4>
+      <div
+        class="shapes_selection"
+      >
+        <div>
+          <input
+            aria-label="lineShapesolid"
+            id="lineShapesolid"
+            name="lineShape"
+            type="radio"
+            value="solid"
+          />
+          <label
+            for="lineShapesolid"
+          >
+            SOLID
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="lineShapedotted"
+            id="lineShapedotted"
+            name="lineShape"
+            type="radio"
+            value="dotted"
+          />
+          <label
+            for="lineShapedotted"
+          >
+            DOTTED
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="lineShapedashed"
+            id="lineShapedashed"
+            name="lineShape"
+            type="radio"
+            value="dashed"
+          />
+          <label
+            for="lineShapedashed"
+          >
+            DASHED
+          </label>
+        </div>
+        <div>
+          <input
+            aria-label="lineShapehidden"
+            id="lineShapehidden"
+            name="lineShape"
+            type="radio"
+            value="hidden"
+          />
+          <label
+            for="lineShapehidden"
+          >
+            HIDDEN
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

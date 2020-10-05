@@ -4,6 +4,12 @@ import userEvent from '@testing-library/user-event';
 import ColorPicker from '../ColorPicker/ColorPicker';
 
 describe('ColorPicker', () => {
+    it('component renders correctly', () => {
+        const colorpicker = render(<ColorPicker colors={{ primaryColor: '#000000', secondaryColor: '#FFFFFF' }}
+        />);
+        expect(colorpicker).toMatchSnapshot()
+    });
+
   it('calls when changed', () => {
     const setColors = jest.fn();
     render(
@@ -23,4 +29,5 @@ describe('ColorPicker', () => {
 
     expect(setColors).toHaveBeenCalledTimes(8);
   });
+
 });

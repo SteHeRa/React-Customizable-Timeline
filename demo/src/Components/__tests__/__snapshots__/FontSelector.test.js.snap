@@ -1,0 +1,514 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FontSelector component renders correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <select
+        class="font_section"
+        name="options"
+      >
+        <option
+          value=""
+        >
+          Select a font
+        </option>
+        <option
+          value="American Typewriter"
+        >
+          American Typewriter
+        </option>
+        <option
+          value="Andale Mono"
+        >
+          Andale Mono
+        </option>
+        <option
+          value="Apple Chancery"
+        >
+          Apple Chancery
+        </option>
+        <option
+          value="Arial"
+        >
+          Arial
+        </option>
+        <option
+          value="Arial Narrow"
+        >
+          Arial Narrow
+        </option>
+        <option
+          value="Avantgarde"
+        >
+          Avantgarde
+        </option>
+        <option
+          value="Blippo"
+        >
+          Blippo
+        </option>
+        <option
+          value="Bookman"
+        >
+          Bookman
+        </option>
+        <option
+          value="Bradley Hand"
+        >
+          Bradley Hand
+        </option>
+        <option
+          value="Brush Script MT"
+        >
+          Brush Script MT
+        </option>
+        <option
+          value="Chalkduster"
+        >
+          Chalkduster
+        </option>
+        <option
+          value="Chivo"
+        >
+          Chivo
+        </option>
+        <option
+          value="Comic Sans MS"
+        >
+          Comic Sans MS
+        </option>
+        <option
+          value="Courier"
+        >
+          Courier
+        </option>
+        <option
+          value="Courier New"
+        >
+          Courier New
+        </option>
+        <option
+          value="DejaVu Sans Mono"
+        >
+          DejaVu Sans Mono
+        </option>
+        <option
+          value="Didot"
+        >
+          Didot
+        </option>
+        <option
+          value="FreeMono"
+        >
+          FreeMono
+        </option>
+        <option
+          value="Georgia"
+        >
+          Georgia
+        </option>
+        <option
+          value="Gill Sans"
+        >
+          Gill Sans
+        </option>
+        <option
+          value="Helvetica"
+        >
+          Helvetica
+        </option>
+        <option
+          value="Impact"
+        >
+          Impact
+        </option>
+        <option
+          value="Jazz LET"
+        >
+          Jazz LET
+        </option>
+        <option
+          value="Luminari"
+        >
+          Luminari
+        </option>
+        <option
+          value="Marker Felt"
+        >
+          Marker Felt
+        </option>
+        <option
+          value="New Century Schoolbook"
+        >
+          New Century Schoolbook
+        </option>
+        <option
+          value="Noto Sans"
+        >
+          Noto Sans
+        </option>
+        <option
+          value="OCR A Std"
+        >
+          OCR A Std
+        </option>
+        <option
+          value="Optima"
+        >
+          Optima
+        </option>
+        <option
+          value="Palatino"
+        >
+          Palatino
+        </option>
+        <option
+          value="Snell Roundhand"
+        >
+          Snell Roundhand
+        </option>
+        <option
+          value="Stencil Std"
+        >
+          Stencil Std
+        </option>
+        <option
+          value="Times"
+        >
+          Times
+        </option>
+        <option
+          value="Times New Roman"
+        >
+          Times New Roman
+        </option>
+        <option
+          value="Trattatello"
+        >
+          Trattatello
+        </option>
+        <option
+          value="Trebuchet MS"
+        >
+          Trebuchet MS
+        </option>
+        <option
+          value="URW Chancery L"
+        >
+          URW Chancery L
+        </option>
+        <option
+          value="Verdana"
+        >
+          Verdana
+        </option>
+        <option
+          value="cursive"
+        >
+          Cursive
+        </option>
+        <option
+          value="fantasy"
+        >
+          Fantasy
+        </option>
+        <option
+          value="monospace"
+        >
+          Monospace
+        </option>
+        <option
+          value="sans-serif"
+        >
+          Sans-serif
+        </option>
+        <option
+          value="serif"
+        >
+          Serif
+        </option>
+      </select>
+    </div>
+  </body>,
+  "container": <div>
+    <select
+      class="font_section"
+      name="options"
+    >
+      <option
+        value=""
+      >
+        Select a font
+      </option>
+      <option
+        value="American Typewriter"
+      >
+        American Typewriter
+      </option>
+      <option
+        value="Andale Mono"
+      >
+        Andale Mono
+      </option>
+      <option
+        value="Apple Chancery"
+      >
+        Apple Chancery
+      </option>
+      <option
+        value="Arial"
+      >
+        Arial
+      </option>
+      <option
+        value="Arial Narrow"
+      >
+        Arial Narrow
+      </option>
+      <option
+        value="Avantgarde"
+      >
+        Avantgarde
+      </option>
+      <option
+        value="Blippo"
+      >
+        Blippo
+      </option>
+      <option
+        value="Bookman"
+      >
+        Bookman
+      </option>
+      <option
+        value="Bradley Hand"
+      >
+        Bradley Hand
+      </option>
+      <option
+        value="Brush Script MT"
+      >
+        Brush Script MT
+      </option>
+      <option
+        value="Chalkduster"
+      >
+        Chalkduster
+      </option>
+      <option
+        value="Chivo"
+      >
+        Chivo
+      </option>
+      <option
+        value="Comic Sans MS"
+      >
+        Comic Sans MS
+      </option>
+      <option
+        value="Courier"
+      >
+        Courier
+      </option>
+      <option
+        value="Courier New"
+      >
+        Courier New
+      </option>
+      <option
+        value="DejaVu Sans Mono"
+      >
+        DejaVu Sans Mono
+      </option>
+      <option
+        value="Didot"
+      >
+        Didot
+      </option>
+      <option
+        value="FreeMono"
+      >
+        FreeMono
+      </option>
+      <option
+        value="Georgia"
+      >
+        Georgia
+      </option>
+      <option
+        value="Gill Sans"
+      >
+        Gill Sans
+      </option>
+      <option
+        value="Helvetica"
+      >
+        Helvetica
+      </option>
+      <option
+        value="Impact"
+      >
+        Impact
+      </option>
+      <option
+        value="Jazz LET"
+      >
+        Jazz LET
+      </option>
+      <option
+        value="Luminari"
+      >
+        Luminari
+      </option>
+      <option
+        value="Marker Felt"
+      >
+        Marker Felt
+      </option>
+      <option
+        value="New Century Schoolbook"
+      >
+        New Century Schoolbook
+      </option>
+      <option
+        value="Noto Sans"
+      >
+        Noto Sans
+      </option>
+      <option
+        value="OCR A Std"
+      >
+        OCR A Std
+      </option>
+      <option
+        value="Optima"
+      >
+        Optima
+      </option>
+      <option
+        value="Palatino"
+      >
+        Palatino
+      </option>
+      <option
+        value="Snell Roundhand"
+      >
+        Snell Roundhand
+      </option>
+      <option
+        value="Stencil Std"
+      >
+        Stencil Std
+      </option>
+      <option
+        value="Times"
+      >
+        Times
+      </option>
+      <option
+        value="Times New Roman"
+      >
+        Times New Roman
+      </option>
+      <option
+        value="Trattatello"
+      >
+        Trattatello
+      </option>
+      <option
+        value="Trebuchet MS"
+      >
+        Trebuchet MS
+      </option>
+      <option
+        value="URW Chancery L"
+      >
+        URW Chancery L
+      </option>
+      <option
+        value="Verdana"
+      >
+        Verdana
+      </option>
+      <option
+        value="cursive"
+      >
+        Cursive
+      </option>
+      <option
+        value="fantasy"
+      >
+        Fantasy
+      </option>
+      <option
+        value="monospace"
+      >
+        Monospace
+      </option>
+      <option
+        value="sans-serif"
+      >
+        Sans-serif
+      </option>
+      <option
+        value="serif"
+      >
+        Serif
+      </option>
+    </select>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
