@@ -59,7 +59,7 @@ const Timeline: React.FC<Props> = ({
         <S_Timeline>
           {data?.map((item, index) => {
             return (
-              <S_TimelineSection data-testid={'timelineItem'} key={index}>
+              <S_TimelineSection data-testid={'timelineSection'} key={index}>
                 <animated.div style={animation ? titleAnimation : undefined}>
                   <S_Title key={item.title}>
                     <div>{item.title}</div>
