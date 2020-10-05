@@ -6,6 +6,12 @@ import './__mocks__/intersectionObserverMock';
 import data from './data';
 
 describe('App', () => {
+  it('renders correctly', () => {
+    const app = render(<App />);
+
+    expect(app).toMatchSnapshot();
+  });
+
   it('has correct text in tiles', () => {
     render(<App />); //render the App component in test-area/src/App.js
 
