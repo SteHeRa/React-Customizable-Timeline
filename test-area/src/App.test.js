@@ -36,11 +36,23 @@ describe('App', () => {
     expect(screen.queryByText('16/09/2020 Content')).not.toBeInTheDocument(); //Check that the rendered component does not cotain this text
   });
 
-  it('renders the correct amount of items', () => {
+  it('renders the correct amount of sections', () => {
+    render(<App />);
+
+    const timelineItems = screen.getAllByTestId('timelineSection');
+    expect(timelineItems.length).toEqual(data.length);
+  });
+
+  it('renders the correct amount of items per section', () => {
     render(<App />);
 
     const timelineItems = screen.getAllByTestId('timelineItem');
-    expect(timelineItems.length).toEqual(data.length);
+    let eventsCount = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      eventsCount = eventsCount + data[i].events.length;
+    }
+    expect(timelineItems.length).toEqual(eventsCount);
   });
 });
 
