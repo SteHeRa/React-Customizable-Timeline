@@ -6,6 +6,12 @@ import './__mocks__/intersectionObserverMock';
 import data from './data';
 
 describe('App', () => {
+  it('renders correctly', () => {
+    const app = render(<App />);
+
+    expect(app).toMatchSnapshot();
+  });
+
   it('has correct text in tiles', () => {
     render(<App />); //render the App component in test-area/src/App.js
 
@@ -28,6 +34,25 @@ describe('App', () => {
     fireEvent.click(screen.getByText('16/09/2020 Subtitle')); //Simulate another click on the component to derender the content
     expect(screen.queryByText('16/09/2020 Label')).not.toBeInTheDocument();
     expect(screen.queryByText('16/09/2020 Content')).not.toBeInTheDocument(); //Check that the rendered component does not cotain this text
+  });
+
+  it('renders the correct amount of sections', () => {
+    render(<App />);
+
+    const timelineItems = screen.getAllByTestId('timelineSection');
+    expect(timelineItems.length).toEqual(data.length);
+  });
+
+  it('renders the correct amount of items per section', () => {
+    render(<App />);
+
+    const timelineItems = screen.getAllByTestId('timelineItem');
+    let eventsCount = 0;
+
+    for (let i = 0; i < data.length; i++) {
+      eventsCount = eventsCount + data[i].events.length;
+    }
+    expect(timelineItems.length).toEqual(eventsCount);
   });
 });
 
