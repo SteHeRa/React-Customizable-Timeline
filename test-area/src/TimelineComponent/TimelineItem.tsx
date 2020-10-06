@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { S_TimelineItem } from './styles';
 import { useSpring, animated, config } from 'react-spring';
+import { Map } from '@styled-icons/foundation'
 
 type ItemProps = {
   title: string;
@@ -34,8 +35,8 @@ const TimelineItem: React.FC<ItemProps> = ({
     <S_TimelineItem>
       <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
         <div data-testid={'timelineItem'} style={{ cursor: 'pointer' }}>
-          <h4>{title}</h4>
-          <h5>{subtitle}</h5>
+            <h4>{title}</h4>
+            <h5>{subtitle}</h5>
           {img && (
             <img
               style={{ maxWidth: '400px', width: '100%', minWidth: '100px', paddingBottom: '10px' }}
@@ -44,32 +45,40 @@ const TimelineItem: React.FC<ItemProps> = ({
             />
           )}
         </div>
+        <div>
         {showContent && (
-          <div>
+            <div>
             <div>{content}</div>
             <div
-              style={{
+                style={{
                 fontSize: 'small',
                 textShadow: '0 0 0.75rem #625261',
                 padding: '10px 0',
                 textAlign: 'right',
-              }}
+            }}
             >
-              {label}
+            {label}
             </div>
-          </div>
-        )}
+            
+        </div>
+        )} 
         {location && (
-          <div style={{ fontSize: 'small', textAlign: 'right' }}>
-            <span role="img" aria-label="localtion">
-              📍
-            </span>{' '}
+            <div style={{ fontSize: 'small', textAlign: 'right' }}>
+                <span role="img" aria-label="location">
+                📍
+                </span>{' '}
             {location}
-          </div>
+            <div onClick={(e) => {e.stopPropagation()}}>
+                <a style={{color:'inherit'}} href={`https://www.google.co.uk/maps/place/{${location}`} target="_blank" rel="noopener noreferrer"><Map style={{ marginTop: '5px' }} size="22"/></a>
+            </div>
+            </div>
+            
         )}
-      </animated.div>
+        </div>
+        
+    </animated.div>
     </S_TimelineItem>
-  );
+);
 };
 
 export default TimelineItem;
