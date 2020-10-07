@@ -2,9 +2,18 @@ import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { ThemeProvider } from 'styled-components';
 import TimelineItem from './TimelineItem';
-import { S_Timeline, S_TimelineSection, S_Title } from './styles';
+import {
+  S_Timeline,
+  S_TimelineSection,
+  S_Title,
+  S_Timeline_Phone,
+  S_TimelineSection_Phone,
+  S_Title_Phone,
+  S_TimelineConnector_Phone,
+} from './styles';
 import { Item } from './Models/Item';
 import { Fade } from 'react-awesome-reveal';
+import ConnectorSVG from './ConnectorSVG';
 
 type Props = {
   animation?: boolean;
@@ -53,41 +62,81 @@ const Timeline: React.FC<Props> = ({
     reset: animated,
   } as any);
 
-  return (
-    <ThemeProvider theme={theme}>
-      <animated.div style={animation ? lineAnimation : undefined}>
-        <S_Timeline>
-          {data?.map((item, index) => {
-            return (
-              <S_TimelineSection data-testid={'timelineSection'} key={index}>
-                <animated.div style={animation ? titleAnimation : undefined}>
-                  <S_Title key={item.title}>
-                    <div>{item.title}</div>
-                  </S_Title>
-                </animated.div>
-                {item.events.map((event, index) => {
-                  return (
-                    <Fade key={index}>
-                      <TimelineItem
-                        key={index}
-                        title={event.title}
-                        subtitle={event.subtitle}
-                        content={event.content}
-                        img={event.img}
-                        label={event.label}
-                        location={event.location}
-                        animation={animation}
-                      />
-                    </Fade>
-                  );
-                })}
-              </S_TimelineSection>
-            );
-          })}
-        </S_Timeline>
-      </animated.div>
-    </ThemeProvider>
-  );
+  if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth < 560) {
+    return (
+      <ThemeProvider theme={theme}>
+        <animated.div style={animation ? lineAnimation : undefined}>
+          <S_Timeline_Phone>
+            {data?.map((item, index) => {
+              return (
+                <S_TimelineSection_Phone data-testid={'timelineSection'} key={index}>
+                  <animated.div style={animation ? titleAnimation : undefined}>
+                    <S_Title_Phone key={item.title}>
+                      <div>{item.title}</div>
+                    </S_Title_Phone>
+                  </animated.div>
+                  {item.events.map((event, index) => {
+                    return (
+                      <Fade key={index}>
+                        <TimelineItem
+                          key={index}
+                          title={event.title}
+                          subtitle={event.subtitle}
+                          content={event.content}
+                          img={event.img}
+                          label={event.label}
+                          location={event.location}
+                          animation={animation}
+                        />
+                        <S_TimelineConnector_Phone className="timeline-connector">
+                          <ConnectorSVG dotShape={dotShape} lineStyle={lineStyle} />
+                        </S_TimelineConnector_Phone>
+                      </Fade>
+                    );
+                  })}
+                </S_TimelineSection_Phone>
+              );
+            })}
+          </S_Timeline_Phone>
+        </animated.div>
+      </ThemeProvider>
+    );
+  } else
+    return (
+      <ThemeProvider theme={theme}>
+        <animated.div style={animation ? lineAnimation : undefined}>
+          <S_Timeline>
+            {data?.map((item, index) => {
+              return (
+                <S_TimelineSection data-testid={'timelineSection'} key={index}>
+                  <animated.div style={animation ? titleAnimation : undefined}>
+                    <S_Title key={item.title}>
+                      <div>{item.title}</div>
+                    </S_Title>
+                  </animated.div>
+                  {item.events.map((event, index) => {
+                    return (
+                      <Fade key={index}>
+                        <TimelineItem
+                          key={index}
+                          title={event.title}
+                          subtitle={event.subtitle}
+                          content={event.content}
+                          img={event.img}
+                          label={event.label}
+                          location={event.location}
+                          animation={animation}
+                        />
+                      </Fade>
+                    );
+                  })}
+                </S_TimelineSection>
+              );
+            })}
+          </S_Timeline>
+        </animated.div>
+      </ThemeProvider>
+    );
 };
 
 export default Timeline;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { S_TimelineItem } from './styles';
+import { S_TimelineItem, S_TimelineItem_Phone } from './styles';
 import { useSpring, animated, config } from 'react-spring';
 
 type ItemProps = {
@@ -30,46 +30,99 @@ const TimelineItem: React.FC<ItemProps> = ({
     to: { transform: 'scale3d(1, 1, 1)' },
     config: config.wobbly,
   });
-  return (
-    <S_TimelineItem>
-      <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
-        <div data-testid={'timelineItem'} style={{ cursor: 'pointer' }}>
-          <h4>{title}</h4>
-          <h5>{subtitle}</h5>
-          {img && (
-            <img
-              style={{ maxWidth: '400px', width: '100%', minWidth: '100px', paddingBottom: '10px' }}
-              src={img.url}
-              alt={img.alt}
-            />
-          )}
-        </div>
-        {showContent && (
-          <div>
-            <div>{content}</div>
-            <div
-              style={{
-                fontSize: 'small',
-                textShadow: '0 0 0.75rem #625261',
-                padding: '10px 0',
-                textAlign: 'right',
-              }}
-            >
-              {label}
+
+  if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth < 560) {
+    return (
+      <S_TimelineItem_Phone>
+        <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
+          <div data-testid={'timelineItem'} style={{ cursor: 'pointer' }}>
+            <h4>{title}</h4>
+            <h5>{subtitle}</h5>
+            {img && (
+              <img
+                style={{
+                  maxWidth: '400px',
+                  width: '100%',
+                  minWidth: '100px',
+                  paddingBottom: '10px',
+                }}
+                src={img.url}
+                alt={img.alt}
+              />
+            )}
+          </div>
+          {showContent && (
+            <div>
+              <div>{content}</div>
+              <div
+                style={{
+                  fontSize: 'small',
+                  textShadow: '0 0 0.75rem #625261',
+                  padding: '10px 0',
+                  textAlign: 'right',
+                }}
+              >
+                {label}
+              </div>
             </div>
+          )}
+          {location && (
+            <div style={{ fontSize: 'small', textAlign: 'right' }}>
+              <span role="img" aria-label="localtion">
+                📍
+              </span>{' '}
+              {location}
+            </div>
+          )}
+        </animated.div>
+      </S_TimelineItem_Phone>
+    );
+  } else
+    return (
+      <S_TimelineItem>
+        <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
+          <div data-testid={'timelineItem'} style={{ cursor: 'pointer' }}>
+            <h4>{title}</h4>
+            <h5>{subtitle}</h5>
+            {img && (
+              <img
+                style={{
+                  maxWidth: '400px',
+                  width: '100%',
+                  minWidth: '100px',
+                  paddingBottom: '10px',
+                }}
+                src={img.url}
+                alt={img.alt}
+              />
+            )}
           </div>
-        )}
-        {location && (
-          <div style={{ fontSize: 'small', textAlign: 'right' }}>
-            <span role="img" aria-label="localtion">
-              📍
-            </span>{' '}
-            {location}
-          </div>
-        )}
-      </animated.div>
-    </S_TimelineItem>
-  );
+          {showContent && (
+            <div>
+              <div>{content}</div>
+              <div
+                style={{
+                  fontSize: 'small',
+                  textShadow: '0 0 0.75rem #625261',
+                  padding: '10px 0',
+                  textAlign: 'right',
+                }}
+              >
+                {label}
+              </div>
+            </div>
+          )}
+          {location && (
+            <div style={{ fontSize: 'small', textAlign: 'right' }}>
+              <span role="img" aria-label="localtion">
+                📍
+              </span>{' '}
+              {location}
+            </div>
+          )}
+        </animated.div>
+      </S_TimelineItem>
+    );
 };
 
 export default TimelineItem;
