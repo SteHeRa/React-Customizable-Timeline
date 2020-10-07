@@ -68,6 +68,7 @@ const Timeline: React.FC<Props> = ({
         <animated.div style={animation ? lineAnimation : undefined}>
           <S_Timeline_Phone>
             {data?.map((item, index) => {
+              let timelineSectionIndex = index;
               return (
                 <S_TimelineSection_Phone data-testid={'timelineSection'} key={index}>
                   <animated.div style={animation ? titleAnimation : undefined}>
@@ -76,27 +77,47 @@ const Timeline: React.FC<Props> = ({
                     </S_Title_Phone>
                   </animated.div>
                   {item.events.map((event, index) => {
-                    return (
-                      <Fade key={index}>
-                        <TimelineItem
-                          key={index}
-                          title={event.title}
-                          subtitle={event.subtitle}
-                          content={event.content}
-                          img={event.img}
-                          label={event.label}
-                          location={event.location}
-                          animation={animation}
-                        />
-                        <S_TimelineConnector_Phone className="timeline-connector">
-                          <ConnectorSVG
-                            dotShape={dotShape}
-                            lineStyle={lineStyle}
-                            color={primaryDarkColor}
+                    let timelineItemIndex = index;
+                    if (
+                      timelineSectionIndex === data.length - 1 &&
+                      timelineItemIndex === data[data.length - 1].events.length - 1
+                    ) {
+                      return (
+                        <Fade key={index}>
+                          <TimelineItem
+                            key={index}
+                            title={event.title}
+                            subtitle={event.subtitle}
+                            content={event.content}
+                            img={event.img}
+                            label={event.label}
+                            location={event.location}
+                            animation={animation}
                           />
-                        </S_TimelineConnector_Phone>
-                      </Fade>
-                    );
+                        </Fade>
+                      );
+                    } else
+                      return (
+                        <Fade key={index}>
+                          <TimelineItem
+                            key={index}
+                            title={event.title}
+                            subtitle={event.subtitle}
+                            content={event.content}
+                            img={event.img}
+                            label={event.label}
+                            location={event.location}
+                            animation={animation}
+                          />
+                          <S_TimelineConnector_Phone className="timeline-connector">
+                            <ConnectorSVG
+                              dotShape={dotShape}
+                              lineStyle={lineStyle}
+                              color={primaryDarkColor}
+                            />
+                          </S_TimelineConnector_Phone>
+                        </Fade>
+                      );
                   })}
                 </S_TimelineSection_Phone>
               );
