@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import data from './data';
 
-import Timeline from './TimelineComponent/Timeline';
+import Timeline from './NewTimelineComponent/Timeline';
 
 function App() {
   return (
