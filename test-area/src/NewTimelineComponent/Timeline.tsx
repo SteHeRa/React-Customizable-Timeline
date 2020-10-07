@@ -43,12 +43,12 @@ const Timeline: React.FC<Props> = ({
     reset: animated,
   } as any);
 
-  const [size, setSize] = useState(false);
+  const [isSmallWindow, setIsSmallWindow] = useState(false);
   let resizeWindow = () => {
     if (window.innerWidth <= 560) {
-      setSize(true);
+      setIsSmallWindow(true);
     } else {
-      setSize(false);
+      setIsSmallWindow(false);
     }
   };
 
@@ -60,7 +60,7 @@ const Timeline: React.FC<Props> = ({
 
   return (
     <div>
-      {size ? (
+      {isSmallWindow ? (
         <ThemeProvider theme={theme}>
           <animated.div style={animation ? lineAnimation : undefined}>
             <S_Timeline_Phone>
