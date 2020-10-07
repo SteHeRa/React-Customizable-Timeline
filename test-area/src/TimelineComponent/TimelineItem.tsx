@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { S_TimelineItem, S_TimelineItem_Phone } from './styles';
 import { useSpring, animated, config } from 'react-spring';
+import { Map } from '@styled-icons/foundation';
 
 type ItemProps = {
   title: string;
@@ -72,6 +73,21 @@ const TimelineItem: React.FC<ItemProps> = ({
                 📍
               </span>{' '}
               {location}
+              <span
+                style={{ marginLeft: '5px' }}
+                onClick={e => {
+                  e.stopPropagation();
+                }}
+              >
+                <a
+                  style={{ color: 'inherit' }}
+                  href={`https://www.google.co.uk/maps/place/{${location}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Map style={{ marginBottom: '5px' }} size="22" />
+                </a>
+              </span>
             </div>
           )}
         </animated.div>
@@ -118,6 +134,21 @@ const TimelineItem: React.FC<ItemProps> = ({
                 📍
               </span>{' '}
               {location}
+              <span
+                style={{ marginLeft: '5px' }}
+                onClick={e => {
+                  e.stopPropagation();
+                }}
+              >
+                <a
+                  style={{ color: 'inherit' }}
+                  href={`https://www.google.co.uk/maps/place/{${location}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Map style={{ marginBottom: '5px' }} size="22" />
+                </a>
+              </span>
             </div>
           )}
         </animated.div>
