@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Timeline from 'react-customizable-timeline';
-import './__mocks__/intersectionObserverMock';
+import '../__mocks__/intersectionObserverMock';
 
 import data from '../../data';
 
