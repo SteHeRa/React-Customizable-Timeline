@@ -89,7 +89,11 @@ const Timeline: React.FC<Props> = ({
                           animation={animation}
                         />
                         <S_TimelineConnector_Phone className="timeline-connector">
-                          <ConnectorSVG dotShape={dotShape} lineStyle={lineStyle} />
+                          <ConnectorSVG
+                            dotShape={dotShape}
+                            lineStyle={lineStyle}
+                            color={primaryDarkColor}
+                          />
                         </S_TimelineConnector_Phone>
                       </Fade>
                     );

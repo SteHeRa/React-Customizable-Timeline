@@ -3,29 +3,14 @@ import React from 'react';
 type SVGProps = {
   dotShape: string;
   lineStyle: string;
+  color: string;
 };
 
-const ConnectorSVG: React.FC<SVGProps> = ({ dotShape = 'circle', lineStyle = 'dotted' }) => {
-  // let points: string = '50,42 58,50 50,58 42,50';
-  // let fill: string = 'black;';
-
-  const dotShapeSelector = (shape: string) => {
-    switch (shape) {
-      case 'circle':
-        return <circle cx="50" cy="50" r="8" fill="black" />;
-      case 'square':
-        return <rect x="50" y="50" width="12" height="12" />;
-      case 'diamond':
-        return <polygon points="50,42 58,50 50,58 42,50" fill="black" />;
-      case 'line':
-        return <line x1="46" y1="50" x2="54" y2="50" stroke="black" strokeWidth="1.5" />;
-    }
-  };
-
+const ConnectorSVG: React.FC<SVGProps> = ({ dotShape, lineStyle, color }) => {
   const lineStyleSelector = (style: string) => {
     switch (style) {
       case 'solid':
-        return <line x1="50%" y1="10" x2="50%" y2="90" stroke="black" strokeWidth="1px" />;
+        return <line x1="50%" y1="10" x2="50%" y2="90" stroke={color} strokeWidth="1px" />;
       case 'dotted':
         return (
           <line
@@ -33,9 +18,9 @@ const ConnectorSVG: React.FC<SVGProps> = ({ dotShape = 'circle', lineStyle = 'do
             y1="10"
             x2="50%"
             y2="90"
-            stroke="black"
+            stroke={color}
             strokeWidth="2px"
-            stroke-dasharray="0,4"
+            strokeDasharray="0,4"
             strokeLinecap="round"
           />
         );
@@ -46,13 +31,26 @@ const ConnectorSVG: React.FC<SVGProps> = ({ dotShape = 'circle', lineStyle = 'do
             y1="10"
             x2="50%"
             y2="90"
-            stroke="black"
+            stroke={color}
             strokeWidth="2px"
-            stroke-dasharray="4,2.2"
+            strokeDasharray="4,2.2"
           />
         );
       case 'hidden':
         return null;
+    }
+  };
+
+  const dotShapeSelector = (shape: string) => {
+    switch (shape) {
+      case 'circle':
+        return <circle cx="50" cy="50" r="8" fill={color} />;
+      case 'square':
+        return <rect x="50" y="50" width="12" height="12" fill={color} />;
+      case 'diamond':
+        return <polygon points="50,42 58,50 50,58 42,50" fill={color} />;
+      case 'line':
+        return <line x1="46" y1="50" x2="54" y2="50" stroke={color} strokeWidth="1.5" />;
     }
   };
 
