@@ -43,7 +43,7 @@ const Timeline: React.FC<Props> = ({
     reset: animated,
   } as any);
 
-  if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth < 560) {
+  if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth < 560)
     return (
       <ThemeProvider theme={theme}>
         <animated.div style={animation ? lineAnimation : undefined}>
@@ -65,7 +65,7 @@ const Timeline: React.FC<Props> = ({
         </animated.div>
       </ThemeProvider>
     );
-  } else
+  else
     return (
       <ThemeProvider theme={theme}>
         <animated.div style={animation ? lineAnimation : undefined}>
