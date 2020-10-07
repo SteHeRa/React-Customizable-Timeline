@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { S_TimelineItem } from './styles';
+import { S_TimelineItem_Phone } from './styles';
 import { useSpring, animated, config } from 'react-spring';
 import { Map } from '@styled-icons/foundation';
 
@@ -14,7 +14,7 @@ type ItemProps = {
   animation?: boolean;
 };
 
-const TimelineItem: React.FC<ItemProps> = ({
+const TimelineItemPhone: React.FC<ItemProps> = ({
   title,
   subtitle,
   content,
@@ -34,7 +34,7 @@ const TimelineItem: React.FC<ItemProps> = ({
   });
 
   return (
-    <S_TimelineItem>
+    <S_TimelineItem_Phone>
       <animated.div style={animation ? itemAnimation : undefined} onClick={handleClick}>
         <div data-testid={'timelineItem'} style={{ cursor: 'pointer' }}>
           <h4>{title}</h4>
@@ -90,8 +90,8 @@ const TimelineItem: React.FC<ItemProps> = ({
           </div>
         )}
       </animated.div>
-    </S_TimelineItem>
+    </S_TimelineItem_Phone>
   );
 };
 
-export default TimelineItem;
+export default TimelineItemPhone;
