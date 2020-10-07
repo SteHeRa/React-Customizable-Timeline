@@ -45,7 +45,7 @@ const Timeline: React.FC<Props> = ({
 
   const [isSmallWindow, setIsSmallWindow] = useState(false);
   let resizeWindow = () => {
-    if (window.innerWidth <= 560) {
+    if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth <= 560) {
       setIsSmallWindow(true);
     } else {
       setIsSmallWindow(false);
