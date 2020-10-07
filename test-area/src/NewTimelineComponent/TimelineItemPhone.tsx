@@ -73,8 +73,7 @@ const TimelineItemPhone: React.FC<ItemProps> = ({
               📍
             </span>{' '}
             {location}
-            <span
-              style={{ marginLeft: '5px' }}
+            <div
               onClick={e => {
                 e.stopPropagation();
               }}
@@ -85,9 +84,9 @@ const TimelineItemPhone: React.FC<ItemProps> = ({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Map style={{ marginBottom: '5px' }} size="22" />
+                <Map style={{ marginTop: '5px' }} size="22" />
               </a>
-            </span>
+            </div>
           </div>
         )}
       </animated.div>
