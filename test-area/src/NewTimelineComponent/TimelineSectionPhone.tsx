@@ -39,9 +39,9 @@ const TimelineSectionPhone: React.FC<SectionProps> = ({
   });
 
   return (
-    <S_TimelineSection_Phone data-testid={'timelineSection'} key={index}>
+    <S_TimelineSection_Phone data-testid={'timelineSection'}>
       <animated.div style={animation ? titleAnimation : undefined}>
-        <S_Title_Phone key={data.title}>
+        <S_Title_Phone>
           <div>{data.title}</div>
         </S_Title_Phone>
       </animated.div>
@@ -49,9 +49,8 @@ const TimelineSectionPhone: React.FC<SectionProps> = ({
         let timelineItemIndex = index;
         if (timelineItemIndex === data.events.length - 1) {
           return (
-            <Fade>
+            <Fade key={index}>
               <TimelineItemPhone
-                key={index}
                 title={event.title}
                 subtitle={event.subtitle}
                 content={event.content}
@@ -64,9 +63,8 @@ const TimelineSectionPhone: React.FC<SectionProps> = ({
           );
         } else {
           return (
-            <Fade>
+            <Fade key={index}>
               <TimelineItemPhone
-                key={index}
                 title={event.title}
                 subtitle={event.subtitle}
                 content={event.content}

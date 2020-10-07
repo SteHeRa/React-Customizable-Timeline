@@ -31,9 +31,9 @@ const TimelineSection: React.FC<SectionProps> = ({ index, animation = true, data
   });
 
   return (
-    <S_TimelineSection data-testid={'timelineSection'} key={index}>
+    <S_TimelineSection data-testid={'timelineSection'}>
       <animated.div style={animation ? titleAnimation : undefined}>
-        <S_Title key={data.title}>
+        <S_Title>
           <div>{data.title}</div>
         </S_Title>
       </animated.div>
@@ -41,7 +41,6 @@ const TimelineSection: React.FC<SectionProps> = ({ index, animation = true, data
         return (
           <Fade key={index}>
             <TimelineItem
-              key={index}
               title={event.title}
               subtitle={event.subtitle}
               content={event.content}
