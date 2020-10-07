@@ -35,6 +35,7 @@ describe('ShapeButton', () => {
 
   for (let i = 0; i < 12; i++) {
     userEvent.click(screen.getAllByRole('radio')[i]);
+    expect(setShapes).toHaveBeenCalledTimes(i + 1);
   }
   expect(setShapes).toHaveBeenCalledTimes(12);
 });
