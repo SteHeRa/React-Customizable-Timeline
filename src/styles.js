@@ -150,7 +150,7 @@ export const S_Title_Phone = styled.div`
   align-items: center;
   color: ${props => props.theme.primaryDarkColor};
   padding: 5px;
-  margin: 0px 0px 25px 0px;
+  margin: 25px 0px 25px 0px;
   bottom: 17px;
   border: 3px double ${props => props.theme.primaryDarkColor};
   ${props => titleShapeSelector(props.theme.titleShape, props.theme.primaryDarkColor)};
