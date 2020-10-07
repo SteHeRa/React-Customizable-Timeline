@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import { ThemeProvider } from 'styled-components';
 import { S_Timeline, S_Timeline_Phone } from './styles';
@@ -43,50 +43,66 @@ const Timeline: React.FC<Props> = ({
     reset: animated,
   } as any);
 
-  if (navigator.userAgent.match(/(iPhone|Android)/i) || window.innerWidth < 560)
-    return (
-      <ThemeProvider theme={theme}>
-        <animated.div style={animation ? lineAnimation : undefined}>
-          <S_Timeline_Phone>
-            {data?.map((item, index) => {
-              return (
-                <TimelineSectionPhone
-                  key={index}
-                  index={index}
-                  animation={animation}
-                  data={item}
-                  primaryDarkColor={primaryDarkColor}
-                  dotShape={dotShape}
-                  lineStyle={lineStyle}
-                />
-              );
-            })}
-          </S_Timeline_Phone>
-        </animated.div>
-      </ThemeProvider>
-    );
-  else
-    return (
-      <ThemeProvider theme={theme}>
-        <animated.div style={animation ? lineAnimation : undefined}>
-          <S_Timeline>
-            {data?.map((item, index) => {
-              return (
-                <TimelineSection
-                  key={index}
-                  index={index}
-                  animation={animation}
-                  data={item}
-                  primaryDarkColor={primaryDarkColor}
-                  dotShape={dotShape}
-                  lineStyle={lineStyle}
-                />
-              );
-            })}
-          </S_Timeline>
-        </animated.div>
-      </ThemeProvider>
-    );
+  const [size, setSize] = useState(false);
+  let resizeWindow = () => {
+    if (window.innerWidth <= 560) {
+      setSize(true);
+    } else {
+      setSize(false);
+    }
+  };
+
+  useEffect(() => {
+    resizeWindow();
+    window.addEventListener('resize', resizeWindow);
+    return () => window.removeEventListener('resize', resizeWindow);
+  }, []);
+
+  return (
+    <div>
+      {size ? (
+        <ThemeProvider theme={theme}>
+          <animated.div style={animation ? lineAnimation : undefined}>
+            <S_Timeline_Phone>
+              {data?.map((item, index) => {
+                return (
+                  <TimelineSectionPhone
+                    key={index}
+                    index={index}
+                    animation={animation}
+                    data={item}
+                    primaryDarkColor={primaryDarkColor}
+                    dotShape={dotShape}
+                    lineStyle={lineStyle}
+                  />
+                );
+              })}
+            </S_Timeline_Phone>
+          </animated.div>
+        </ThemeProvider>
+      ) : (
+        <ThemeProvider theme={theme}>
+          <animated.div style={animation ? lineAnimation : undefined}>
+            <S_Timeline>
+              {data?.map((item, index) => {
+                return (
+                  <TimelineSection
+                    key={index}
+                    index={index}
+                    animation={animation}
+                    data={item}
+                    primaryDarkColor={primaryDarkColor}
+                    dotShape={dotShape}
+                    lineStyle={lineStyle}
+                  />
+                );
+              })}
+            </S_Timeline>
+          </animated.div>
+        </ThemeProvider>
+      )}
+    </div>
+  );
 };
 
 export default Timeline;
